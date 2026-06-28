@@ -1,0 +1,21 @@
+[project]
+name = "Project_Interpreter"
+repo_path = "."
+constitution_path = "PROJECT_CONSTITUTION.md"
+state_dir = ".interpreter"
+reports_dir = "reports"
+poll_seconds = 3.0
+
+[collectors]
+mailbox_paths = []
+git_enabled = true
+git_initial_commits = 20
+git_patch_char_limit = 40000
+
+[llm]
+enabled = false
+endpoint = "http://127.0.0.1:1234/v1"
+model = "local-model"
+api_key_env = "PROJECT_INTERPRETER_API_KEY"
+timeout_seconds = 90
+temperature = 0.1
